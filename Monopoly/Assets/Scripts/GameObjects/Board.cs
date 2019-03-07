@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace GameObjects{
     public class Board : MonoBehaviour{
@@ -10,6 +11,23 @@ namespace GameObjects{
         void Start()
         {
             //create the tiles
+        }
+
+        private static int[] CreateEstatesValueArray(IReadOnlyList<int> baseValues){ //creates the values array for when we create the EstateSpaces
+            var finalValues = new int[baseValues.Count + 3];
+
+            int i;
+            for (i = 0; i < baseValues.Count; i++)
+            {
+                finalValues[i] = baseValues[i];
+            }
+
+            for (; i < baseValues.Count + 3; i++)
+            {
+                finalValues[i] = 0;
+            }
+
+            return finalValues;
         }
     }
 }
