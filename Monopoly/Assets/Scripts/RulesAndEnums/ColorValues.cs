@@ -17,4 +17,4 @@ namespace RulesAndEnums{
         public static readonly int[] DarkBlueHigh = {400, 50, 100, 200, 600, 1400, 1700, 2000, 200, 220, 200};
         public static readonly int[] DarkBlueLow = {350, 35, 79, 175, 500, 1100, 1300, 1500, 175, 193, 200};
     }
-}// 
+}

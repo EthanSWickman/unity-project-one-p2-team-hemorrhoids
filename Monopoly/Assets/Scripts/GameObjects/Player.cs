@@ -12,6 +12,12 @@ namespace GameObjects{
             _position = position;
         }
 
+        public void MovePlayer(){
+            
+            
+            
+        }
+
         public int Money
         {
             get => _money;
