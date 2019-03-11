@@ -1,5 +1,5 @@
-﻿namespace GameObjects{
-    public class Space{
+﻿namespace GameObjects.Spaces{
+    public abstract class Space{
         private string _spaceName;
         private int _typeOfSpace;
 
@@ -14,5 +14,7 @@
             get => _typeOfSpace;
             set => _typeOfSpace = value;
         }
+
+        public abstract void WhenPlayerLandsOnSpace();
     }
 }
