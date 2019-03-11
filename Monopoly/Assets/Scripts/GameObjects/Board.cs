@@ -6,9 +6,9 @@ using UnityEngine;
 namespace GameObjects{
     public class Board : MonoBehaviour{
         private const int BoardSize = 40;
-        private UnityEngine.Space[] _spaces = new UnityEngine.Space[BoardSize];
-        private List<Card> _communityChest;
-        private List<Card> _chance;
+        private Space[] _spaces = new Space[BoardSize];
+        private List<CommunityChestCard> _communityChest;
+        private List<ChanceCards> _chance;
     
         // Start is called before the first frame update
         void Start()

@@ -41,7 +41,5 @@ namespace GameObjects.Cards {
                 return values;
             }
         }
-
-        
     }
 }
