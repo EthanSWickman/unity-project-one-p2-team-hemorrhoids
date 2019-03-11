@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using GameObjects.Cards;
 using UnityEngine;
 
 namespace GameObjects{
     public class Board : MonoBehaviour{
         private const int BoardSize = 40;
         private UnityEngine.Space[] _spaces = new UnityEngine.Space[BoardSize];
-
+        private List<Card> _communityChest;
+        private List<Card> _chance;
     
         // Start is called before the first frame update
         void Start()

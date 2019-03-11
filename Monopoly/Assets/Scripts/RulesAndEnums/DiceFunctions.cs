@@ -7,15 +7,15 @@ public class DiceFunctions : MonoBehaviour {
     public int diceOneValue;
     public int diceTwoValue;
     public int diceTotal;
-    System.Random rnd = new System.Random();
+    System.Random _rnd = new System.Random();
 
-    public void diceRoll(){
+    public void DiceRoll(){
         Debug.Log("Rolling the dice...");
-        diceOneValue = rnd.Next(0, 6);
-        diceTwoValue = rnd.Next(0, 6);
+        diceOneValue = _rnd.Next(0, 6);
+        diceTwoValue = _rnd.Next(0, 6);
     }
 
-    public int getDiceTotalValue(){
+    public int GetDiceTotalValue(){
         diceTotal = diceOneValue + diceTwoValue;
         return diceTotal;
     }
