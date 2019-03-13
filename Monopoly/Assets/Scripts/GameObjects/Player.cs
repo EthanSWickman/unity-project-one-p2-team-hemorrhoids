@@ -22,16 +22,29 @@ namespace GameObjects{
         }
 
         public void UseCard(Card card){
-            int[] values = card.Activate(new[]{_money, _position, _housesOwned, _hotelsOwned});
-            if (values.Length == 1)
+            switch (card.Type)
             {
-                _isInJail = false;
+                case 0:
+                    _position = card.Activate();
+                    break;
+                case 1:
+                    _money = card.Activate(_money);
+                    break;
+                case 2:
+                    _money = card.Activate(new[] {_money, _position, _housesOwned, _hotelsOwned});
+                    break;
+                case 3:
+                    _isInJail = false;
+                    break;
+                case 4:
+                    _position = 10;
+                    _isInJail = true;
+                    break;
+                default:
+                    throw new System.ArgumentException("Parameter cannot be below 0 or above 4", "card.Type");
+                    
             }
-            else
-            {
-                _money = values[0];
-                _position = values[1];
-            }
+
         }
 
         public int Money
