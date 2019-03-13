@@ -1,4 +1,6 @@
 namespace RulesAndEnums{
+    
+    //Format: {Price, RentBase,FullSetRent,Rent1, Rent2, Rent3, Rent4, Rent5, MorgageValue, DemoregageValue, HousePrice}
     public class ColorValues{
         public static readonly int[] BrownHigh = {60, 4, 8, 20, 60, 180, 320, 450, 30, 33, 50};
         public static readonly int[] BrownLow =  {60, 2, 4, 10, 30, 90, 160, 250, 30, 33, 50};

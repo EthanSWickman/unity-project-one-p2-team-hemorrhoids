@@ -1,36 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GameObjects.Cards;
+using GameObjects.Spaces;
+using RulesAndEnums;
 using UnityEngine;
+using Space = UnityEngine.Space;
 
 namespace GameObjects{
     public class Board : MonoBehaviour{
         private const int BoardSize = 40;
-        private Space[] _spaces = new Space[BoardSize];
+        public GameObjects.Spaces.Space[] _spaces = new GameObjects.Spaces.Space[BoardSize];
         private List<CommunityChestCard> _communityChest;
         private List<ChanceCards> _chance;
-    
+
         // Start is called before the first frame update
-        void Start()
-        {
-            //create the tiles
+        void Start(){
+            _spaces[39] = new EstateSpace(CreateEstatesValueArray(ColorValues.DarkBlueHigh));
         }
 
-        private static int[] CreateEstatesValueArray(IReadOnlyList<int> baseValues){ //creates the values array for when we create the EstateSpaces
-            var finalValues = new int[baseValues.Count + 3];
-
-            int i;
-            for (i = 0; i < baseValues.Count; i++)
-            {
-                finalValues[i] = baseValues[i];
-            }
-
-            for (; i < baseValues.Count + 3; i++)
-            {
-                finalValues[i] = 0;
-            }
-
-            return finalValues;
+        public Spaces.Space[] Spaces {
+            get => _spaces;
+            set => _spaces = value;
         }
-    }
+
+
 }
