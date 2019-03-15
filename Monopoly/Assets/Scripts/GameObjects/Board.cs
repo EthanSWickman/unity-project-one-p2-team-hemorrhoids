@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using GameObjects.BoardSpaces;
-using GameObjects.BoardSpaces.BuyableSpaces;
 using GameObjects.Cards;
 using RulesAndEnums;
 using UnityEngine;
@@ -22,6 +20,10 @@ namespace GameObjects{
         public BoardSpaces.Space[] Spaces {
             get => _spaces;
             set => _spaces = value;
+        }
+
+        private void WhenPlayerLandsOnSpace(Player player){
+            _spaces[player.Position]
         }
 
 

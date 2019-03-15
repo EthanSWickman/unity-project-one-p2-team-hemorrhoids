@@ -1,20 +1,16 @@
 ﻿
+using GameObjects.Cards;
+
 namespace GameObjects.BoardSpaces.ActionSpaces {
-    public class GoSpace : Space
-    {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
+    public class GoSpace : Space {
+
+        private const int CollectMoneyOnGo = 300;
+
+        public override int WhenPlayerLandsOnSpace(int money){
+            return money += CollectMoneyOnGo;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-
-        public override int WhenPlayerLandsOnSpace(){
+        public override Card WhenPlayerLandsOnSpace(){
             throw new System.NotImplementedException();
         }
     }

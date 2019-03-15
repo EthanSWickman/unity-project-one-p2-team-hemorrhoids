@@ -1,3 +1,4 @@
+using GameObjects.Cards;
 using RulesAndEnums;
 
 namespace GameObjects.BoardSpaces.BuyableSpaces{
@@ -15,7 +16,11 @@ namespace GameObjects.BoardSpaces.BuyableSpaces{
             return index;
         }
 
-        public override int WhenPlayerLandsOnSpace(){
+        public override int WhenPlayerLandsOnSpace(int money){
+            throw new System.NotImplementedException();
+        }
+
+        public override Card WhenPlayerLandsOnSpace(){
             throw new System.NotImplementedException();
         }
     }

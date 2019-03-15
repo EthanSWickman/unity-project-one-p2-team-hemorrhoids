@@ -1,4 +1,7 @@
-﻿namespace GameObjects.BoardSpaces{
+﻿using GameObjects.Cards;
+using UnityEngine.EventSystems;
+
+namespace GameObjects.BoardSpaces{
     public abstract class Space{
         private string _spaceName;
         private int _typeOfSpace;
@@ -15,6 +18,9 @@
             set => _typeOfSpace = value;
         }
 
-        public abstract int WhenPlayerLandsOnSpace();
+        public abstract int WhenPlayerLandsOnSpace(int money);
+
+        public abstract Card WhenPlayerLandsOnSpace();
+        
     }
 }
