@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameObjects.BoardSpaces.BuyableSpaces;
 using GameObjects.Cards;
 using RulesAndEnums;
 using UnityEngine;
@@ -23,7 +24,10 @@ namespace GameObjects{
         }
 
         private void WhenPlayerLandsOnSpace(Player player){
-            _spaces[player.Position]
+            if (_spaces[player.Position].GetType ().Equals("EstateSpace"))
+            {
+                
+            }
         }
 
 

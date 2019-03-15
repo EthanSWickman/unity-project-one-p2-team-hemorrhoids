@@ -58,24 +58,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameObjects\Board.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\EstateSpace.cs" />
-    <Compile Include="Assets\Scripts\GameObjects\Space.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\ActionSpaces\FreeParking.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\ActionSpaces\GoSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\ActionSpaces\JailSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\ActionSpaces\TaxSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\BuyableSpaces\EstateSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\BuyableSpaces\RailRoad.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\BuyableSpaces\UtilitySpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\CardSpaces\ChanceSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\CardSpaces\CommunityChestSpace.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\CardSpaces\DrawCardTile.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\BoardSpaces\Space.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Cards\Card.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Cards\ChanceCards.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Cards\CommunityChestCard.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Player.cs" />
     <Compile Include="Assets\Scripts\RulesAndEnums\ColorValues.cs" />
+    <Compile Include="Assets\Scripts\RulesAndEnums\DiceFunctions.cs" />
+    <Compile Include="Assets\Scripts\RulesAndEnums\HARDCODED\SetBoardArray.cs" />
     <Compile Include="Assets\Scripts\RulesAndEnums\TypesOfValues.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -279,13 +294,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.2f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/bbridenbaug7077/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/bbridenbaug7077/unity-project-one-p2-team-hemorrhoids/Monopoly/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.2f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

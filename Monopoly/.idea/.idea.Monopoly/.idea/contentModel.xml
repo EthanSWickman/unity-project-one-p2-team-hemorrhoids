@@ -2,18 +2,45 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\bbridenbaug7077\.Rider2018.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\bbridenbaug7077\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Monopoly.-1382974271.00" t="ExcludeRecursive" />
-    <e p="C:\Users\bbridenbaug7077\Monopoly" t="IncludeRecursive">
+    <e p="C:\Users\bbridenbaug7077\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_Monopoly.785672191.00" t="ExcludeRecursive" />
+    <e p="C:\Users\bbridenbaug7077\unity-project-one-p2-team-hemorrhoids\Monopoly" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="GameObjects" t="Include">
             <e p="Board.cs" t="Include" />
-            <e p="EstateSpace.cs" t="Include" />
-            <e p="Space.cs" t="Include" />
+            <e p="BoardSpaces" t="Include">
+              <e p="ActionSpaces" t="Include">
+                <e p="FreeParking.cs" t="Include" />
+                <e p="GoSpace.cs" t="Include" />
+                <e p="JailSpace.cs" t="Include" />
+                <e p="TaxSpace.cs" t="Include" />
+              </e>
+              <e p="BuyableSpaces" t="Include">
+                <e p="EstateSpace.cs" t="Include" />
+                <e p="RailRoad.cs" t="Include" />
+                <e p="UtilitySpace.cs" t="Include" />
+              </e>
+              <e p="CardSpaces" t="Include">
+                <e p="ChanceSpace.cs" t="Include" />
+                <e p="CommunityChestSpace.cs" t="Include" />
+                <e p="DrawCardTile.cs" t="Include" />
+              </e>
+              <e p="Space.cs" t="Include" />
+            </e>
+            <e p="Cards" t="Include">
+              <e p="Card.cs" t="Include" />
+              <e p="ChanceCards.cs" t="Include" />
+              <e p="CommunityChestCard.cs" t="Include" />
+            </e>
+            <e p="Player.cs" t="Include" />
           </e>
           <e p="RulesAndEnums" t="Include">
             <e p="ColorValues.cs" t="Include" />
+            <e p="DiceFunctions.cs" t="Include" />
+            <e p="HARDCODED" t="Include">
+              <e p="SetBoardArray.cs" t="Include" />
+            </e>
             <e p="TypesOfValues.cs" t="Include" />
           </e>
         </e>
