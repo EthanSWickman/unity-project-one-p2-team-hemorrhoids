@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace GameObjects.BoardSpaces.CardSpaces {
-    public class CommunityChestSpace : Space
+    public class CommunityChestSpace : DrawCardTile
     {
         // Start is called before the first frame update
         void Start()
@@ -13,6 +13,9 @@ namespace GameObjects.BoardSpaces.CardSpaces {
         void Update()
         {
         
+        }
+
+        public CommunityChestSpace(bool chanceOrCommunityChest) : base(chanceOrCommunityChest){
         }
     }
 }

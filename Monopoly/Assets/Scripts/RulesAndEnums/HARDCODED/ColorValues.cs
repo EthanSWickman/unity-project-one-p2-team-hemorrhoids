@@ -1,4 +1,4 @@
-namespace RulesAndEnums{
+namespace RulesAndEnums.HARDCODED{
     
     //Format: {Price, RentBase,FullSetRent,Rent1, Rent2, Rent3, Rent4, Rent5, MorgageValue, DemoregageValue, HousePrice}
     public class ColorValues{

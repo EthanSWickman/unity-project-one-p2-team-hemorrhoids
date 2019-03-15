@@ -2,10 +2,9 @@ using GameObjects.Cards;
 
 namespace GameObjects.BoardSpaces.CardSpaces {
     public class DrawCardTile : Space {
-        private bool _chanceOrCommunityChest;
+        public bool ChanceOrCommunityChest  { get; set;}
 
         public DrawCardTile(bool chanceOrCommunityChest){
-            _chanceOrCommunityChest = chanceOrCommunityChest;
         }
 
         public override int WhenPlayerLandsOnSpace(int money){
@@ -14,6 +13,7 @@ namespace GameObjects.BoardSpaces.CardSpaces {
 
         public override Card WhenPlayerLandsOnSpace(){
             
+            throw new System.NotImplementedException();
         }
     }
 }
