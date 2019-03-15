@@ -1,6 +1,6 @@
 using RulesAndEnums;
 
-namespace GameObjects.Spaces{
+namespace GameObjects.BoardSpaces{
     public class EstateSpace : Space{
 
         private int[] _values;

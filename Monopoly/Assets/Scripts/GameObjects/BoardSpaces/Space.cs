@@ -1,4 +1,4 @@
-﻿namespace GameObjects.Spaces{
+﻿namespace GameObjects.BoardSpaces{
     public abstract class Space{
         private string _spaceName;
         private int _typeOfSpace;

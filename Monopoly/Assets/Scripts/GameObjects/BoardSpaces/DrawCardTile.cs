@@ -1,4 +1,4 @@
-namespace GameObjects.Spaces {
+namespace GameObjects.BoardSpaces {
     public class DrawCardTile : Space {
         private bool _chanceOrCommunityChest;
 
