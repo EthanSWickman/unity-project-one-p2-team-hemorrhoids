@@ -1,6 +1,6 @@
 using RulesAndEnums;
 
-namespace GameObjects.BoardSpaces{
+namespace GameObjects.BoardSpaces.BuyableSpaces{
     public class EstateSpace : Space{
 
         private int[] _values;
@@ -15,7 +15,7 @@ namespace GameObjects.BoardSpaces{
             return index;
         }
 
-        public override void WhenPlayerLandsOnSpace(){
+        public override int WhenPlayerLandsOnSpace(){
             throw new System.NotImplementedException();
         }
     }

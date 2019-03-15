@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GameObjects.BoardSpaces;
+using GameObjects.BoardSpaces.BuyableSpaces;
 using GameObjects.Cards;
 using RulesAndEnums;
 using UnityEngine;
@@ -15,7 +16,7 @@ namespace GameObjects{
 
         // Start is called before the first frame update
         void Start(){
-            _spaces[39] = new EstateSpace(CreateEstatesValueArray(ColorValues.DarkBlueHigh));
+            _spaces = RulesAndEnums.HARDCODED.SetBoardArray.SetUpBoardArray(_spaces);
         }
 
         public BoardSpaces.Space[] Spaces {

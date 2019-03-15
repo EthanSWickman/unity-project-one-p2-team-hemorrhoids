@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-namespace GameObjects.BoardSpaces {
-    public class ChanceSpace : MonoBehaviour
+namespace GameObjects.BoardSpaces.BuyableSpaces {
+    public class UtilitySpace : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

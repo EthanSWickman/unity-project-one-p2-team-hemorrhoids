@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-namespace GameObjects.BoardSpaces {
-    public class RailRoad : MonoBehaviour
+namespace GameObjects.BoardSpaces.CardSpaces {
+    public class CommunityChestSpace : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

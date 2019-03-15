@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-namespace GameObjects.BoardSpaces {
-    public class GoSpace : MonoBehaviour
+namespace GameObjects.BoardSpaces.ActionSpaces {
+    public class JailSpace : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

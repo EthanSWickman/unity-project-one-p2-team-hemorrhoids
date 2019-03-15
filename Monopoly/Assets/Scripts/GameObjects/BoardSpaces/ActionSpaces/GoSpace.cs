@@ -1,7 +1,6 @@
-﻿using UnityEngine;
-
-namespace GameObjects.BoardSpaces {
-    public class TaxSpace : MonoBehaviour
+﻿
+namespace GameObjects.BoardSpaces.ActionSpaces {
+    public class GoSpace : Space
     {
         // Start is called before the first frame update
         void Start()
@@ -13,6 +12,10 @@ namespace GameObjects.BoardSpaces {
         void Update()
         {
         
+        }
+
+        public override int WhenPlayerLandsOnSpace(){
+            throw new System.NotImplementedException();
         }
     }
 }

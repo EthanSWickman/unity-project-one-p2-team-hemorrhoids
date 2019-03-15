@@ -15,6 +15,6 @@
             set => _typeOfSpace = value;
         }
 
-        public abstract void WhenPlayerLandsOnSpace();
+        public abstract int WhenPlayerLandsOnSpace();
     }
 }

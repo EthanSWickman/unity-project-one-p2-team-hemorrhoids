@@ -1,4 +1,4 @@
-namespace GameObjects.BoardSpaces {
+namespace GameObjects.BoardSpaces.CardSpaces {
     public class DrawCardTile : Space {
         private bool _chanceOrCommunityChest;
 
@@ -6,7 +6,7 @@ namespace GameObjects.BoardSpaces {
             _chanceOrCommunityChest = chanceOrCommunityChest;
         }
 
-        public override void WhenPlayerLandsOnSpace(){
+        public override int WhenPlayerLandsOnSpace(){
             
         }
     }

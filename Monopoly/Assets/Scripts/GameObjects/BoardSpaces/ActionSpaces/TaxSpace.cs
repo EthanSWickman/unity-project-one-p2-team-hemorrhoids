@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-namespace GameObjects.BoardSpaces {
-    public class CommunityChestSpace : MonoBehaviour
+namespace GameObjects.BoardSpaces.ActionSpaces {
+    public class TaxSpace : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
