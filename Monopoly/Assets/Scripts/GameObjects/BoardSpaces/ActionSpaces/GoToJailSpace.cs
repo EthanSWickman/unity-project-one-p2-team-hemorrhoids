@@ -1,18 +1,17 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace GameObjects.BoardSpaces.ActionSpaces {
-    public class JailSpace : Space
-    {
+    public class GoToJailSpace : Space {
         // Start is called before the first frame update
-        void Start()
-        {
-        
+        void Start(){
+
         }
 
         // Update is called once per frame
-        void Update()
-        {
-        
+        void Update(){
+
         }
     }
 }

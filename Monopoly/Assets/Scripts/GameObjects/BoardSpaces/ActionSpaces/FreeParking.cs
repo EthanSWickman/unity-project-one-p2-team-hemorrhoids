@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 namespace GameObjects.BoardSpaces.ActionSpaces {
-    public class FreeParling : MonoBehaviour
+    public class FreeParling : Space
     {
         // Start is called before the first frame update
         void Start()
